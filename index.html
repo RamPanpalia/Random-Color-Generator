@@ -38,22 +38,25 @@
 
 changeColor();
 function changeColor(){
-    var a = (Math.floor((Math.random() * 1000)%256)).toString(16);
-    if(a.length==1){
-        a="0"+a;
-    }
-    var b = (Math.floor((Math.random() * 1000)%256)).toString(16);
-    if(a.length==1){
-        b="0"+b;
-    }
-    var c = (Math.floor((Math.random() * 1000)%256)).toString(16);
-    if(c.length==1){
-        c="0"+c;
-    }
-    document.querySelector('body').style.backgroundColor="#"+a+b+c;
-    document.querySelector('.colorCode').innerHTML="#"+a+b+c;
-    // document.querySelector('.CopyCode').style.backgroundColor="white"
-    // document.querySelector('.CopyCode').style.color="initial"
+    // var a = (Math.floor((Math.random() * 1000)%256)).toString(16);
+    // if(a.length==1){
+    //     a="0"+a;
+    // }
+    // var b = (Math.floor((Math.random() * 1000)%256)).toString(16);
+    // if(a.length==1){
+    //     b="0"+b;
+    // }
+    // var c = (Math.floor((Math.random() * 1000)%256)).toString(16);
+    // if(c.length==1){
+    //     c="0"+c;
+    // }
+    // document.querySelector('body').style.backgroundColor="#"+a+b+c;
+    // document.querySelector('.colorCode').innerHTML="#"+a+b+c;
+    // document.querySelector('.CopyCode').innerHTML="Copy Color Code"
+    var d = (Math.floor((Math.random() * 1000000000)%16777215)).toString(16);
+
+    document.querySelector('body').style.backgroundColor="#"+d;
+    document.querySelector('.colorCode').innerHTML="#"+d;
     document.querySelector('.CopyCode').innerHTML="Copy Color Code"
 }
 
